@@ -1,0 +1,82 @@
+.stellarnav, .stellarnav.mobile
+  font-weight: 400
+  font-size: 15px
+  font-family: $bree
+  a
+    color: $black !important
+    &:hover
+      color: $blue !important
+  ul
+    text-transform: uppercase
+    ul
+      text-transform: capitalize
+      background: $brown
+      font-size: 14px
+      li
+        a
+          padding-top: 8px
+          padding-bottom: 8px
+          &:hover
+            background: $blue
+            color: $white !important
+
+.stellarnav.mobile
+  .dd-toggle
+    padding: 15px !important
+  .close-menu
+    width: 100%
+  ul
+    position: absolute
+    left: 0
+    right: 0
+    background: rgba(236, 196, 159, 1)
+    li
+      a
+        padding: 13px 15px
+        font-size: 15px !important
+        &:hover
+          background: $blue
+          color: $white !important
+    ul
+      background: $brown
+      li
+        .dd-toggle
+          height: 41px
+        a
+          padding: 10px 0 10px 25px !important
+        ul
+          li
+            a
+              padding: 10px 15px 10px 35px !important
+            ul
+              li
+                a
+                  padding: 10px 15px 10px 45px !important
+                ul
+                  li
+                    a
+                      padding: 10px 15px 10px 55px !important
+
+.stellarnav.mobile .call-btn-mobile, .stellarnav.mobile .close-menu, .stellarnav.mobile .dd-toggle, .stellarnav.mobile .location-btn-mobile, .stellarnav.mobile .menu-toggle
+  font-size: 15px
+  padding-top: 12px
+  padding-bottom: 12px
+  &:hover
+    background: $blue
+    color: $white !important
+
+//---padding between menu links
+.stellarnav>ul>li>a
+  padding-top: 12px
+  padding-bottom: 12px
+  padding-left: 2px
+  padding-right: 2px
+  font-size: 12px
+  @media (min-width: $desktop)
+    padding-left: between(2px, 7px, $desktop, $large)
+    padding-right: between(2px, 7px, $desktop, $large)
+    font-size: between(12px, 15px, $desktop, $large)
+  @media (min-width: $large)
+    padding-left: 7px
+    padding-right: 7px
+    font-size: 15px
